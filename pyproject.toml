@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mgh-practice"
+version = "0.1.0"
+description = "My Python Practice"
+authors = [
+    { name="Mojtaba", email="mghadery@gmail.com" }
+]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["bank", "bitcoin", "camel"]
