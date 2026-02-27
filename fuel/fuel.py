@@ -8,6 +8,7 @@ def main():
         except (ValueError, ZeroDivisionError):
             continue
 
+
 def convert(fraction):
     [x, y] = fraction.split("/")
     x = int(x)
