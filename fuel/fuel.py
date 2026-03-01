@@ -8,6 +8,7 @@ def main():
         except (ValueError, ZeroDivisionError):
             continue
 
+
 def convert(fraction):
     [x, y] = fraction.split("/")
     x = int(x)
@@ -18,6 +19,7 @@ def convert(fraction):
     percentage = round(100*xdy)
     return percentage
 
+
 def gauge(percentage):
     if percentage <= 1:
         return "E"
@@ -25,6 +27,7 @@ def gauge(percentage):
         return "F"
     else:
         return f"{percentage}%"
+
 
 if __name__ == "__main__":
     main()
